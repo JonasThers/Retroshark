@@ -1,0 +1,59 @@
+.popup {
+  position: fixed;
+  padding: 1em;
+  background: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: 1px hotpink solid;
+  width: 100%;
+  left: 1em;
+  right: 1em;
+}
+
+.popup.hide {
+  bottom: -210px;
+}
+
+.popup.visible {
+  bottom: 1em;
+}
+
+.popup__form {
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+}
+
+.popup__form.hide {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.popup__form.visible {
+  max-height: 200px;
+  margin-bottom: 1em;
+}
+
+.popup__form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.popup__form input {
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+.popup__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+/*# sourceMappingURL=style.css.map */

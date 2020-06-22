@@ -1,0 +1,47 @@
+.popup {
+    position: fixed;
+    padding: 1em;
+    background: white;
+    transition: 0.5s;
+    border: 1px hotpink solid;
+    width: 100%;
+    left: 1em;
+    right: 1em;
+
+    &.hide {
+        bottom: -210px;
+    }
+
+    &.visible {
+        bottom: 1em;
+    }
+
+    &__form {
+        transition: 0.9s;
+
+        &.hide {
+            max-height: 0;
+            overflow: hidden;
+        }
+    
+        &.visible {
+            max-height: 200px;
+            margin-bottom: 1em;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            padding: 0.5em;
+            margin-bottom: 1em;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
