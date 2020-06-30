@@ -1,28 +1,40 @@
 import React from "react";
 import "./styles/style.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Header from './components/header';
+import { LoadingPage, MainLayout } from './components/layout/layout';
 import Loading from './components/loading';
 import Home from "./components/home";
 import Contact from "./components/contact";
 import NoMatch from "./components/404";
-import Popup from "./components/popup";
 
 const App = () => {
     return (
         <div className="App">
             <Router>
-                <Header />
                 <Switch>
-                    <Route exact path="/" component={Loading} />
-                    <Route exact path="/home" component={Home} />
-                    <Route exact path="/contact" component={Contact} />
-                    <Route component={NoMatch} />
+                    <RouteWrapper exact path="/" component={Loading} layout={LoadingPage} />
+                    <RouteWrapper exact path="/home" component={Home} layout={MainLayout} />
+                    <RouteWrapper exact path="/contact" component={Contact} layout={MainLayout} />
+                    <RouteWrapper component={NoMatch} layout={MainLayout} />
                 </Switch>
             </Router>
-            <Popup />
         </div>
     );
 };
+
+function RouteWrapper({
+      component: Component,
+      layout: Layout,
+      ...rest
+}) {
+    return (
+        <Route {...rest} render={(props) =>
+            <Layout {...props}>
+                <Component {...props} />
+            </Layout>
+        } />
+    );
+}
+
 
 export default App;
