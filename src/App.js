@@ -23,10 +23,10 @@ const App = () => {
 };
 
 function RouteWrapper({
-      component: Component,
-      layout: Layout,
-      ...rest
-}) {
+                          component: Component,
+                          layout: Layout,
+                          ...rest
+                      }) {
     return (
         <Route {...rest} render={(props) =>
             <Layout {...props}>
