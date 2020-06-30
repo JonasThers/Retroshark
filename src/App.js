@@ -2,10 +2,10 @@ import React from "react";
 import "./styles/style.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { LoadingPage, MainLayout } from './components/layout/layout';
-import Loading from './components/loading';
-import Home from "./components/home";
-import Contact from "./components/contact";
-import NoMatch from "./components/404";
+import Loading from './components/loadingpage/loading';
+import Home from "./components/home/home";
+import Contact from "./components/contact/contact";
+import NoMatch from "./components/404/404";
 
 const App = () => {
     return (
