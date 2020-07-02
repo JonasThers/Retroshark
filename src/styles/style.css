@@ -1,10 +1,32 @@
+.loading {
+  background: black;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.loading__title {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 30px;
+}
+
 .popup {
   position: fixed;
   padding: 1em;
   background: white;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  border: 1px hotpink solid;
+  border: 1px blue solid;
   width: 100%;
   left: 1em;
   right: 1em;
@@ -55,5 +77,9 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+body {
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */

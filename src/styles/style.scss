@@ -1,51 +1,6 @@
+//@import "./font/font";
 @import "./maps/color";
 @import "./maps/spacing-unit";
 @import "./maps/font-size";
-
-.popup {
-    position: fixed;
-    padding: map-get($spacing-unit, 'small');
-    background: map-get($colors, 'white');
-    transition: 0.5s;
-    border: 1px hotpink solid;
-    width: 100%;
-    left: map-get($spacing-unit, 'small');
-    right: map-get($spacing-unit, 'small');
-
-    &.hide {
-        bottom: -210px;
-    }
-
-    &.visible {
-        bottom: map-get($spacing-unit, 'small');
-    }
-
-    &__form {
-        transition: 0.9s;
-
-        &.hide {
-            max-height: 0;
-            overflow: hidden;
-        }
-    
-        &.visible {
-            max-height: 200px;
-            margin-bottom: map-get($spacing-unit, 'small');
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-
-        input {
-            padding: map-get($spacing-unit, 'tiny');
-            margin-bottom: map-get($spacing-unit, 'small');
-        }
-    }
-
-    &__actions {
-        display: flex;
-        justify-content: space-evenly;
-    }
-}
+@import "./pages/pages";
+@import "./layout/layout";

@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from "react-router-dom";
 import TextBlock from "./textblock";
 
 const Home = () => {
+
+  useEffect(() => {
+    document.title = 'RetroShark | Home';
+  }, []);
+
   return (
     <div>
       <h2>Home</h2>

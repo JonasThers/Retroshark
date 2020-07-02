@@ -13,7 +13,7 @@ const Loading = () => {
         }, 500);
     }, [dot]);
 
-    useEffect(() => {
+   useEffect(() => {
         setTimeout(() => {
             history.push("/home");
         }, 2000);
