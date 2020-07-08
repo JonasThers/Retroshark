@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 
 const NoMatch = () => {
 
@@ -7,7 +7,7 @@ const NoMatch = () => {
       }, []);
 
     return (
-        <div>
+        <div className='container'>
             <h2>404</h2>
         </div>
     );

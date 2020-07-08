@@ -1,0 +1,32 @@
+.text-blocks {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-block {
+  margin-bottom: map-get($spacing-unit, "medium");
+  padding: map-get($spacing-unit, "small");
+  box-shadow: 0px 6px 10px map-get($colors, "box-shadow");
+
+  &__content {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1025px) {
+  .text-blocks {
+    flex-direction: row;
+  }
+
+  .text-block {
+      margin-left: map-get($spacing-unit, "small");
+      margin-right: map-get($spacing-unit, "small");
+      transition: 1s;
+
+      &.highlight {
+        position: relative;
+        bottom: map-get($spacing-unit, "tiny");
+        transition: 1s;
+      }
+  }
+}

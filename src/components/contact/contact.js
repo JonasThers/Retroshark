@@ -7,7 +7,7 @@ const Contact = () => {
   const [sent, setSent] = useState(false);
 
   useEffect(() => {
-    document.title = 'RetroShark | Contact';
+    document.title = "RetroShark | Contact";
   }, []);
 
   const onSubmit = () => {
@@ -15,12 +15,12 @@ const Contact = () => {
   };
 
   return (
-    <div>
+    <div className='container'>
       <div>
         In need of my help? Or would you just like a discussion with a
         like-minded geek?
       </div>
-      <div>Then let's get in touch!</div>
+      <div>Then let"s get in touch!</div>
 
       <form onSubmit={handleSubmit(onSubmit)}>
         <input
@@ -50,13 +50,13 @@ const Contact = () => {
           })}
           rows="7"
         />
-        {errors.message && <span>Don't you have anything to say?</span>}
+        {errors.message && <span>Don"t you have anything to say?</span>}
 
         <button type="submit">Send!</button>
       </form>
       {sent && (
         <div>
-          Your message has hereby been sent! We'll get back to you as soon as
+          Your message has hereby been sent! We"ll get back to you as soon as
           possible!
         </div>
       )}

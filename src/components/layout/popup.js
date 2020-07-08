@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { useForm } from "react-hook-form";
+import { PopupContext } from "./popupcontext";
 
 const Popup = () => {
-    const [popup, setPopup] = useState(false);
     const [popupContent, setPopupContent] = useState(false);
     const [signUp, setSignUp] = useState(false);
 
@@ -20,6 +20,8 @@ const Popup = () => {
             setPopup(false);
         }, 2500);
     };
+
+    const { popup, setPopup } = useContext(PopupContext);
 
     return (
         <div className={"popup " + (popup ? "visible" : "hide")}>
