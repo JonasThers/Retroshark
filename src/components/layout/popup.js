@@ -29,7 +29,7 @@ const Popup = () => {
 
   return (
     <div className={"popup " + (popup ? "visible" : "hide")}>
-      <div>Interested in our newsletter?</div>
+      <div className='popup__title'>Interested in our newsletter?</div>
       <div className={"popup__form " + (popupContent ? "visible" : "hide")}>
         <form onSubmit={handleSubmit(onSubmit)}>
           <input

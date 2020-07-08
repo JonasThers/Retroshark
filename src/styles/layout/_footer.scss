@@ -24,7 +24,7 @@
       display: flex;
 
       &-links {
-        margin-right: 2em;
+        margin-right: map-get($spacing-unit, 'big');
       }
     }
   }
