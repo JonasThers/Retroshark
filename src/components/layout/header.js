@@ -7,6 +7,7 @@ const Header = () => {
             <div>Retroshark</div>
             <div>Retro Gaming Consultancy</div>
             <Link to="./home">Home</Link>
+            <Link to="./about">About</Link>
             <Link to="./contact">Contact</Link>
         </div>
     );

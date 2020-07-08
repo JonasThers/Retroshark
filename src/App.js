@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { LoadingPage, MainLayout } from "./components/layout/layout";
 import Loading from "./components/loadingpage/loading";
 import Home from "./components/home/home";
+import About from "./components/about/about";
 import Contact from "./components/contact/contact";
 import NoMatch from "./components/404/404";
 
@@ -22,6 +23,12 @@ const App = () => {
             exact
             path="/home"
             component={Home}
+            layout={MainLayout}
+          />
+          <RouteWrapper
+            exact
+            path="/about"
+            component={About}
             layout={MainLayout}
           />
           <RouteWrapper

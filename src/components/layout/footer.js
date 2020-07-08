@@ -21,6 +21,9 @@ const Footer = () => {
           <Link to="./home">
             <div className="footer-link">Home</div>
           </Link>
+          <Link to="./about">
+            <div className="footer-link">About</div>
+          </Link>
           <Link to="./contact">
             <div className="footer-link">Contact</div>
           </Link>
