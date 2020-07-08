@@ -1,0 +1,20 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+
+    input,
+    textarea {
+        margin-bottom: map-get($spacing-unit, 'small');
+    }
+}
+
+@media (min-width: 768px) {
+    .inputs {
+        display: flex;
+        justify-content: space-between;
+
+        input {
+            width: calc((50% - 0.5em));
+        }
+    }
+}

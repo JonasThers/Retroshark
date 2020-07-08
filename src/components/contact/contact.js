@@ -15,34 +15,35 @@ const Contact = () => {
   };
 
   return (
-    <div className='container'>
+    <div className="container">
       <div>
         In need of my help? Or would you just like a discussion with a
         like-minded geek?
       </div>
       <div>Then let"s get in touch!</div>
 
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <input
-          name="name"
-          ref={register({
-            required: true,
-          })}
-        />
-        {errors.name && <span>I would like to know your name</span>}
+      <form className='contact-form' onSubmit={handleSubmit(onSubmit)}>
+        <div className="inputs">
+          <input
+            name="name"
+            ref={register({
+              required: true,
+            })}
+          />
+          {errors.name && <span>I would like to know your name</span>}
 
-        <input
-          name="email"
-          ref={register({
-            required: "We kind of need your email for this",
-            pattern: {
-              value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-              message: "This seems like an invalid email",
-            },
-          })}
-        />
-        {errors.email && errors.email.message}
-
+          <input
+            name="email"
+            ref={register({
+              required: "We kind of need your email for this",
+              pattern: {
+                value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
+                message: "This seems like an invalid email",
+              },
+            })}
+          />
+          {errors.email && errors.email.message}
+        </div>
         <textarea
           name="message"
           ref={register({
