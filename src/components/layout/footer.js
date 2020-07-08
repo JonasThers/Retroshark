@@ -3,7 +3,12 @@ import { Link } from "react-router-dom";
 import { PopupContext } from "./popupcontext";
 
 const Footer = () => {
-  const { setPopup } = useContext(PopupContext);
+  const [{ popup, setPopup }, { popupContent, setPopupContent }] = useContext(PopupContext);
+
+  const openPopup = () => {
+    setPopup(true);
+    setPopupContent(true);
+  }
 
   return (
     <div className="footer container">
@@ -24,7 +29,7 @@ const Footer = () => {
           <div className="footer__info-news-title">
             Interested in our newsletter?
           </div>
-          <button onClick={() => setPopup(true)}>Newsletter</button>
+          <button onClick={openPopup}>Newsletter</button>
         </div>
       </div>
     </div>
