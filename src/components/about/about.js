@@ -26,11 +26,17 @@ const About = () => {
         when buying, and all in all just have fun with their great passion
       </div>
       <div>Here are some of my cases:</div>
-      {caseData.map((case, index) => {
-          return (
-            <Case key={index} title={case.title} description={case.description} />
-          );
-        })};
+      {caseData.map((caseData, index) => {
+        return (
+          <Case
+            key={index}
+            contentReversed={caseData.contentReversed}
+            title={caseData.title}
+            description={caseData.description}
+            imgUrl={caseData.img}
+          />
+        );
+      })}
     </div>
   );
 };

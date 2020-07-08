@@ -15,7 +15,7 @@
   margin-bottom: map-get($spacing-unit, "tiny");
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 768px) {
   .footer {
     flex-direction: row;
     justify-content: space-between;
