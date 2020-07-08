@@ -30,7 +30,7 @@ const About = () => {
           return (
             <Case key={index} title={case.title} description={case.description} />
           );
-        })}
+        })};
     </div>
   );
 };
