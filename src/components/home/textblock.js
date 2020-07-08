@@ -20,7 +20,7 @@ const TextBlock = (props) => {
         className="text-block"
       >
         <div className="text-block__img">
-          <img src={props.imgUrl} />
+          <img className="text-block-img" src={props.imgUrl} />
         </div>
         <div className="text-block__content">{props.content}</div>
       </div>
