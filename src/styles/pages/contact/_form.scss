@@ -1,20 +1,48 @@
 .contact-form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    input,
-    textarea {
-        margin-bottom: map-get($spacing-unit, 'small');
+  input,
+  textarea {
+    margin-top: map-get($spacing-unit, 'small');
+    margin-bottom: map-get($spacing-unit, 'small');
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .field {
+    span {
+      margin-bottom: map-get($spacing-unit, 'small');
     }
+  }
 }
 
 @media (min-width: 768px) {
-    .inputs {
-        display: flex;
-        justify-content: space-between;
-
-        input {
-            width: calc((50% - 0.5em));
-        }
+  .contact-form {
+    input,
+    textarea {
+      margin-top: 0;
     }
+
+    .inputs {
+      display: flex;
+      justify-content: space-between;
+
+      input {
+        width: 100%;
+      }
+    }
+
+    .field {
+      display: flex;
+      flex-direction: column;
+      width: calc((50% - 0.5em));
+
+      span {
+        margin-bottom: map-get($spacing-unit, 'small');
+      }
+    }
+  }
 }
