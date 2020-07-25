@@ -95,11 +95,17 @@
 }
 
 @media (min-width: 768px) {
-  .case {
+  .case:nth-child(even) {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .case:nth-child(odd) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
   .case__info {
     width: 70%;
