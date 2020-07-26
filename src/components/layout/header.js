@@ -6,7 +6,9 @@ const Header = () => {
   return (
     <div>
       <Navbar collapseOnSelect expand='lg'>
-        <Navbar.Brand>RetroShark</Navbar.Brand>
+        <Navbar.Brand>
+          <Link to='./home'>RetroShark</Link>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls='responsive-navbar-nav' />
         <Navbar.Collapse id='responsive-navbar-nav'>
           <Nav>

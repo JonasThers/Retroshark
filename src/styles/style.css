@@ -153,6 +153,7 @@
 .contact-form textarea {
   margin-top: 1em;
   margin-bottom: 1em;
+  padding: 0.5em;
 }
 
 .contact-form input {
@@ -332,5 +333,9 @@
 
 body {
   margin: 0;
+}
+
+a:hover {
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
