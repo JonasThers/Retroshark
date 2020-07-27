@@ -1,0 +1,38 @@
+.intro {
+    margin-bottom: map-get($spacing-unit, 'small');
+    
+    &__text {
+        text-align: center;
+        margin-bottom: map-get($spacing-unit, 'default');
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        
+        button {
+            text-align: center;
+            width: 100%;
+            margin-bottom: map-get($spacing-unit, 'small');
+        }
+    }
+}
+
+@media (min-width: 768px) {
+
+    .intro {
+        &__text {
+            text-align: left;
+        }
+
+        &__buttons {
+            flex-direction: row;
+
+            button {
+                width: auto;
+                margin-bottom: 0;
+                margin-right: map-get($spacing-unit, 'small');
+            }
+        }
+    }
+}
