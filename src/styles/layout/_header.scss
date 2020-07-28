@@ -1,3 +1,7 @@
+.navbar-brand {
+    font-size: map-get($font-sizes, 'medium');
+}
+
 .navbar-collapse {
     justify-content: flex-end;
 
@@ -9,8 +13,25 @@
 
 .header-brand {
     text-align: center;
+    font-size: map-get($font-sizes, 'default');
+    margin-top: map-get($spacing-unit, 'small');
 }
 
 .navbar-toggler:focus {
     outline: none;
+}
+
+@media (min-width: 768px) {
+    .navbar-brand {
+        font-size: map-get($font-sizes, 'big');
+    }
+
+    .header-brand {
+        font-size: map-get($font-sizes, 'medium');
+        margin-bottom: map-get($spacing-unit, 'default');
+    }
+
+    .nav-link {
+        font-size: map-get($font-sizes, 'default');
+    }
 }

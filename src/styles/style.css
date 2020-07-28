@@ -44,6 +44,8 @@
 .text-block .text-block-img {
   height: auto;
   width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 @media (min-width: 1025px) {
@@ -354,6 +356,10 @@
   }
 }
 
+.navbar-brand {
+  font-size: 25px;
+}
+
 .navbar-collapse {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -371,10 +377,25 @@
 
 .header-brand {
   text-align: center;
+  font-size: 20px;
+  margin-top: 1em;
 }
 
 .navbar-toggler:focus {
   outline: none;
+}
+
+@media (min-width: 768px) {
+  .navbar-brand {
+    font-size: 30px;
+  }
+  .header-brand {
+    font-size: 25px;
+    margin-bottom: 2em;
+  }
+  .nav-link {
+    font-size: 20px;
+  }
 }
 
 body {
@@ -383,5 +404,10 @@ body {
 
 a:hover {
   text-decoration: none;
+}
+
+* {
+  font-family: 'Press Start 2P', cursive;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */
