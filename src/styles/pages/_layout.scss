@@ -1,0 +1,16 @@
+.page-title {
+    text-align: center;
+    font-size: map-get($font-sizes, 'default');
+    margin-bottom: map-get($spacing-unit, 'default');;
+}
+
+.page-content {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .page-content {
+        text-align: left;
+    }
+      
+}

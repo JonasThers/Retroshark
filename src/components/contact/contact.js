@@ -15,7 +15,8 @@ const Contact = () => {
   };
 
   return (
-    <div className='container'>
+    <div className='container page-content'>
+      <div className='page-title'>Contact me</div>
       <div>
         In need of my help? Or would you just like a discussion with a
         like-minded geek?

@@ -1,3 +1,19 @@
+.page-title {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 2em;
+}
+
+.page-content {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .page-content {
+    text-align: left;
+  }
+}
+
 .loading {
   background: black;
   height: 100vh;
@@ -79,6 +95,7 @@
 .intro__text {
   text-align: center;
   margin-bottom: 2em;
+  font-size: 20px;
 }
 
 .intro__buttons {
@@ -100,6 +117,7 @@
 @media (min-width: 768px) {
   .intro__text {
     text-align: left;
+    width: 60%;
   }
   .intro__buttons {
     -webkit-box-orient: horizontal;
@@ -357,7 +375,7 @@
 }
 
 .navbar-brand {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .navbar-collapse {

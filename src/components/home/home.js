@@ -39,8 +39,10 @@ const Home = () => {
           content='Want to sell your old Super Nintendo, but dont know how much you can allow to charge for it?'
         />
       </div>
+      <div>I'll make sure that you're all good to go to enjoy all the great classics out there!</div>
+      <div>So in case you're tired of Bowser ruining your retro gaming experience...</div>
       <Link to='./contact'>
-        <button>Lets get in touch</button>
+        <button>Lets get in touch!</button>
       </Link>
     </div>
   );

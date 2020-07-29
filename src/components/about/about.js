@@ -1,15 +1,15 @@
-import React, { useEffect } from "react";
-import Case from "./case";
-import caseData from "../../json/cases";
+import React, { useEffect } from 'react';
+import Case from './case';
+import caseData from '../../json/cases';
 
 const About = () => {
   useEffect(() => {
-    document.title = "RetroShark | About";
+    document.title = 'RetroShark | About';
   }, []);
 
   return (
-    <div className="container">
-      <h2>Who am I?</h2>
+    <div className='container page-content'>
+      <div className='page-title'>Who am I?</div>
       <div>
         I'm pretty much just a guy, who is passionate about video games,
         especially those from older generations.

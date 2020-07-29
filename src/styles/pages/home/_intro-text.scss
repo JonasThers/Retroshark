@@ -4,6 +4,7 @@
     &__text {
         text-align: center;
         margin-bottom: map-get($spacing-unit, 'default');
+        font-size: map-get($font-sizes, 'default');
     }
 
     &__buttons {
@@ -23,6 +24,7 @@
     .intro {
         &__text {
             text-align: left;
+            width: 60%;
         }
 
         &__buttons {
