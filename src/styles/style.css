@@ -382,8 +382,19 @@ body {
 
 .navbar-brand {
   font-size: 20px;
-  color: white;
   text-shadow: black 2px 2px;
+}
+
+.navbar-brand a {
+  color: white;
+}
+
+.navbar-toggler {
+  border-color: white !important;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff !important;
 }
 
 .navbar-collapse {
@@ -399,8 +410,11 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  color: white;
   text-shadow: black 2px 2px;
+}
+
+.navbar-collapse .nav-link a {
+  color: white;
 }
 
 .header-brand {
