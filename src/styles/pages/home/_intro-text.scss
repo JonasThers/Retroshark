@@ -5,6 +5,8 @@
         text-align: center;
         margin-bottom: map-get($spacing-unit, 'default');
         font-size: map-get($font-sizes, 'default');
+        text-shadow: map-get($colors, 'black') 2px 2px;
+        color: map-get($colors, 'white');
     }
 
     &__buttons {
@@ -22,9 +24,18 @@
 @media (min-width: 768px) {
 
     .intro {
+        height: 450px;
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
         &__text {
             text-align: left;
             width: 60%;
+            font-size: map-get($font-sizes, 'big');
         }
 
         &__buttons {
