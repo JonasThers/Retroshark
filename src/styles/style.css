@@ -120,6 +120,25 @@ body {
   text-align: center;
   width: 100%;
   margin-bottom: 1em;
+  background: #FACD00;
+  text-transform: uppercase;
+  text-shadow: black 2px 2px;
+  color: white;
+  border-radius: 25px;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  -webkit-box-shadow: 4px 6px 1px rgba(0, 0, 0, 0.08);
+          box-shadow: 4px 6px 1px rgba(0, 0, 0, 0.08);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border: none;
+}
+
+.intro__buttons button:hover {
+  -webkit-box-shadow: 10px 6px 1px rgba(0, 0, 0, 0.08);
+          box-shadow: 10px 6px 1px rgba(0, 0, 0, 0.08);
 }
 
 @media (min-width: 768px) {
@@ -137,6 +156,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    height: 100%;
   }
   .intro__text {
     text-align: left;
