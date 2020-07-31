@@ -1,5 +1,7 @@
 .navbar-brand {
     font-size: map-get($font-sizes, 'default');
+    color: map-get($colors, 'white');
+    text-shadow: map-get($colors, 'black') 2px 2px;
 }
 
 .navbar-collapse {
@@ -8,6 +10,8 @@
     .nav-link {
         display: flex;
         justify-content: flex-end;
+        color: map-get($colors, 'white');
+    text-shadow: map-get($colors, 'black') 2px 2px;
     }
 }
 
@@ -15,6 +19,8 @@
     text-align: center;
     font-size: map-get($font-sizes, 'default');
     margin-top: map-get($spacing-unit, 'small');
+    color: map-get($colors, 'white');
+    text-shadow: map-get($colors, 'black') 2px 2px;
 }
 
 .navbar-toggler:focus {

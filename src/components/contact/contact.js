@@ -17,11 +17,11 @@ const Contact = () => {
   return (
     <div className='container page-content'>
       <div className='page-title'>Contact me</div>
-      <div>
+      <p>
         In need of my help? Or would you just like a discussion with a
         like-minded geek?
-      </div>
-      <div>Then let's get in touch!</div>
+      </p>
+      <p>Then let's get in touch!</p>
 
       <form className='contact-form' onSubmit={handleSubmit(onSubmit)}>
         <div className='inputs'>

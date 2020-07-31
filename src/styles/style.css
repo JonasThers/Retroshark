@@ -1,3 +1,9 @@
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(#049cd8), to(white));
+  background: linear-gradient(to bottom, #049cd8 0%, white 100%);
+  background-attachment: fixed;
+}
+
 .page-title {
   text-align: center;
   font-size: 20px;
@@ -376,6 +382,8 @@
 
 .navbar-brand {
   font-size: 20px;
+  color: white;
+  text-shadow: black 2px 2px;
 }
 
 .navbar-collapse {
@@ -391,12 +399,16 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  color: white;
+  text-shadow: black 2px 2px;
 }
 
 .header-brand {
   text-align: center;
   font-size: 20px;
   margin-top: 1em;
+  color: white;
+  text-shadow: black 2px 2px;
 }
 
 .navbar-toggler:focus {
