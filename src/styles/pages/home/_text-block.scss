@@ -1,12 +1,15 @@
 .text-blocks {
   display: flex;
   flex-direction: column;
+  margin-bottom: map-get($spacing-unit, 'medium');
 }
 
 .text-block {
-  margin-bottom: map-get($spacing-unit, "medium");
-  padding: map-get($spacing-unit, "default");
-  box-shadow: 0px 6px 10px map-get($colors, "box-shadow");
+  margin-bottom: map-get($spacing-unit, 'medium');
+  padding: map-get($spacing-unit, 'default');
+  box-shadow: 10px 9px 1px map-get($colors, 'box-shadow');
+  background: map-get($colors, 'white');
+  border-radius: 10px;
 
   &__content {
     text-align: center;
@@ -22,11 +25,10 @@
 @media (min-width: 1025px) {
   .text-blocks {
     flex-direction: row;
+    width: calc(100% - 2em);
   }
 
   .text-block {
-    margin-left: map-get($spacing-unit, "small");
-    margin-right: map-get($spacing-unit, "small");
     transition: 1s;
 
     .text-block-img {
@@ -35,7 +37,7 @@
 
     &.highlight {
       position: relative;
-      bottom: map-get($spacing-unit, "tiny");
+      bottom: map-get($spacing-unit, 'tiny');
       transition: 1s;
     }
   }

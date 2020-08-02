@@ -15,6 +15,11 @@ input,
 textarea {
     border-radius: 10px;
     border: solid 2px map-get($colors, 'black');
+    transition: 0.3s;
+
+    &:focus {
+        outline: none;
+    }
 }
 
 button {
