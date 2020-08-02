@@ -1,0 +1,13 @@
+.contact-link {
+    margin-bottom: map-get($spacing-unit, 'default');
+}
+
+@media (min-width: 768px) {
+    .contact-link {
+        text-align: center;
+
+        button {
+            width: auto;
+        }
+    }
+}

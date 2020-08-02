@@ -21,6 +21,14 @@
 }
 
 @media (min-width: 768px) {
+  .send-button {
+    display: flex;
+    justify-content: flex-end;
+    
+    button {
+      width: 200px;
+    }
+  }
   .contact-form {
     input,
     textarea {

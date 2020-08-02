@@ -51,9 +51,11 @@ const Home = () => {
           experience...
         </p>
       </div>
-      <Link to='./contact'>
-        <button>Lets get in touch!</button>
-      </Link>
+      <div className='contact-link'>
+        <Link to='./contact'>
+          <button>Lets get in touch!</button>
+        </Link>
+      </div>
     </div>
   );
 };

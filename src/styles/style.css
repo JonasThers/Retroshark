@@ -8,6 +8,8 @@ body {
   text-align: center;
   font-size: 20px;
   margin-bottom: 2em;
+  color: white;
+  text-shadow: black 2px 2px;
 }
 
 button {
@@ -42,6 +44,7 @@ button:hover {
   -webkit-box-shadow: 10px 9px 1px rgba(0, 0, 0, 0.08);
           box-shadow: 10px 9px 1px rgba(0, 0, 0, 0.08);
   border-radius: 10px;
+  text-align: center;
 }
 
 .page-content {
@@ -185,6 +188,28 @@ button:hover {
   }
 }
 
+.contact-link {
+  margin-bottom: 2em;
+}
+
+@media (min-width: 768px) {
+  .contact-link {
+    text-align: center;
+  }
+  .contact-link button {
+    width: auto;
+  }
+}
+
+.case-main-title {
+  text-align: center;
+  color: white;
+  text-shadow: black 2px 2px;
+  font-size: 20px;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
 .case {
   padding: 2em;
   margin-bottom: 2em;
@@ -280,6 +305,17 @@ button:hover {
 }
 
 @media (min-width: 768px) {
+  .send-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .send-button button {
+    width: 200px;
+  }
   .contact-form input,
   .contact-form textarea {
     margin-top: 0;

@@ -28,7 +28,7 @@ const About = () => {
           passion
         </p>
       </div>
-      <div>Here are some of my cases:</div>
+      <div className='case-main-title'>Here are some of my cases:</div>
       {caseData.map((caseData, index) => {
         return (
           <Case

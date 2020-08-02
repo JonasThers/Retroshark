@@ -60,8 +60,9 @@ const Contact = () => {
             rows='7'
           />
           {errors.message && <span>Don't you have anything to say?</span>}
-
-          <button type='submit'>Send!</button>
+          <div className='send-button'>
+            <button type='submit'>Send!</button>
+          </div>
         </form>
         {sent && (
           <div>

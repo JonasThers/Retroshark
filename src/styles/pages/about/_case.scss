@@ -1,3 +1,12 @@
+.case-main-title{
+  text-align: center;
+  color: map-get($colors, 'white');
+  text-shadow: map-get($colors, 'black') 2px 2px;
+  font-size: map-get($font-sizes, 'default');
+  margin-bottom: map-get($spacing-unit, 'default');
+  margin-top: map-get($spacing-unit, 'default');
+}
+
 .case {
   padding: map-get($spacing-unit, 'default');
   margin-bottom: map-get($spacing-unit, 'default');

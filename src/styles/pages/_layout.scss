@@ -6,7 +6,9 @@ body {
 .page-title {
     text-align: center;
     font-size: map-get($font-sizes, 'default');
-    margin-bottom: map-get($spacing-unit, 'default');;
+    margin-bottom: map-get($spacing-unit, 'default');
+    color: map-get($colors, 'white');
+    text-shadow: map-get($colors, 'black') 2px 2px;
 }
 
 button {
@@ -37,6 +39,7 @@ button {
     margin-bottom: map-get($spacing-unit, 'default');
     box-shadow: 10px 9px 1px map-get($colors, 'box-shadow');
     border-radius: 10px;
+    text-align: center;
 }
 
 .page-content {
