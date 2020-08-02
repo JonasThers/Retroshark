@@ -9,6 +9,36 @@ body {
     margin-bottom: map-get($spacing-unit, 'default');;
 }
 
+button {
+    text-align: center;
+    width: 100%;
+    margin-bottom: map-get($spacing-unit, 'small');
+    background: map-get($colors, 'yellow');
+    text-transform: uppercase;
+    text-shadow: map-get($colors, 'black') 2px 2px;
+    color: map-get($colors, 'white');
+    border-radius: 25px;
+    padding-left: map-get($spacing-unit, 'small');
+    padding-right: map-get($spacing-unit, 'small');
+    padding-bottom: map-get($spacing-unit, 'tiny');
+    padding-top: map-get($spacing-unit, 'tiny');
+    box-shadow: 4px 6px 1px map-get($colors, 'box-shadow');
+    transition: 0.3s;
+    border: none;
+
+    &:hover {
+        box-shadow: 10px 6px 1px map-get($colors, 'box-shadow');
+    }
+}
+
+.box-container {
+    background: map-get($colors, 'white');
+    padding: map-get($spacing-unit, 'default');
+    margin-bottom: map-get($spacing-unit, 'default');
+    box-shadow: 10px 9px 1px map-get($colors, 'box-shadow');
+    border-radius: 10px;
+}
+
 .page-content {
     text-align: center;
 }
