@@ -11,6 +11,12 @@ body {
     text-shadow: map-get($colors, 'black') 2px 2px;
 }
 
+input,
+textarea {
+    border-radius: 10px;
+    border: solid 2px map-get($colors, 'black');
+}
+
 button {
     text-align: center;
     width: 100%;
@@ -20,8 +26,8 @@ button {
     text-shadow: map-get($colors, 'black') 2px 2px;
     color: map-get($colors, 'white');
     border-radius: 25px;
-    padding-left: map-get($spacing-unit, 'small');
-    padding-right: map-get($spacing-unit, 'small');
+    padding-left: map-get($spacing-unit, 'default');
+    padding-right: map-get($spacing-unit, 'default');
     padding-bottom: map-get($spacing-unit, 'tiny');
     padding-top: map-get($spacing-unit, 'tiny');
     box-shadow: 4px 6px 1px map-get($colors, 'box-shadow');
@@ -30,6 +36,10 @@ button {
 
     &:hover {
         box-shadow: 10px 6px 1px map-get($colors, 'box-shadow');
+    }
+
+    &:focus {
+        outline: none;
     }
 }
 

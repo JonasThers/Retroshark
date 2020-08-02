@@ -12,6 +12,12 @@ body {
   text-shadow: black 2px 2px;
 }
 
+input,
+textarea {
+  border-radius: 10px;
+  border: solid 2px black;
+}
+
 button {
   text-align: center;
   width: 100%;
@@ -21,8 +27,8 @@ button {
   text-shadow: black 2px 2px;
   color: white;
   border-radius: 25px;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
   padding-bottom: 0.5em;
   padding-top: 0.5em;
   -webkit-box-shadow: 4px 6px 1px rgba(0, 0, 0, 0.08);
@@ -35,6 +41,10 @@ button {
 button:hover {
   -webkit-box-shadow: 10px 6px 1px rgba(0, 0, 0, 0.08);
           box-shadow: 10px 6px 1px rgba(0, 0, 0, 0.08);
+}
+
+button:focus {
+  outline: none;
 }
 
 .box-container {
@@ -361,11 +371,12 @@ button:hover {
   background: white;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  -webkit-box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.08);
-          box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 10px 9px 1px rgba(0, 0, 0, 0.08);
+          box-shadow: 10px 9px 1px rgba(0, 0, 0, 0.08);
   width: calc(100% - 2em);
   left: 1em;
   right: 1em;
+  border-radius: 10px;
 }
 
 .popup__title {
@@ -417,11 +428,15 @@ button:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media (min-width: 768px) {
   .popup {
-    width: 33%;
+    width: 50%;
   }
 }
 
