@@ -222,19 +222,25 @@ button:hover {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
+  background: white;
+  -webkit-box-shadow: 10px 9px 1px rgba(0, 0, 0, 0.08);
+          box-shadow: 10px 9px 1px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
 }
 
 .case__img-img {
   height: auto;
   width: 100%;
   margin-bottom: 1em;
+  border-radius: 10px;
 }
 
 .case__info-title {
   margin-bottom: 1em;
+  font-size: 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1268px) {
   .case:nth-child(even) {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -272,6 +278,9 @@ button:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .case__img.left {
+    margin-right: 2em;
   }
   .case__img-img {
     margin-bottom: 0;

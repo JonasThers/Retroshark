@@ -33,7 +33,7 @@ const About = () => {
         return (
           <Case
             key={index}
-            contentReversed={caseData.contentReversed}
+            toRight={caseData.toRight}
             title={caseData.title}
             description={caseData.description}
             imgUrl={caseData.img}
