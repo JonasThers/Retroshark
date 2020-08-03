@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/retroshark/static/css/main.3dd00cf6.chunk.css",
+    "main.js": "/retroshark/static/js/main.12b1f6f4.chunk.js",
+    "main.js.map": "/retroshark/static/js/main.12b1f6f4.chunk.js.map",
+    "runtime-main.js": "/retroshark/static/js/runtime-main.9c513583.js",
+    "runtime-main.js.map": "/retroshark/static/js/runtime-main.9c513583.js.map",
+    "static/js/2.ccdd39a4.chunk.js": "/retroshark/static/js/2.ccdd39a4.chunk.js",
+    "static/js/2.ccdd39a4.chunk.js.map": "/retroshark/static/js/2.ccdd39a4.chunk.js.map",
+    "index.html": "/retroshark/index.html",
+    "precache-manifest.b34903817ac00d4442b963bfe87585a2.js": "/retroshark/precache-manifest.b34903817ac00d4442b963bfe87585a2.js",
+    "service-worker.js": "/retroshark/service-worker.js",
+    "static/css/main.3dd00cf6.chunk.css.map": "/retroshark/static/css/main.3dd00cf6.chunk.css.map",
+    "static/js/2.ccdd39a4.chunk.js.LICENSE.txt": "/retroshark/static/js/2.ccdd39a4.chunk.js.LICENSE.txt",
+    "static/media/dreamcast.5925a7a2.jpg": "/retroshark/static/media/dreamcast.5925a7a2.jpg",
+    "static/media/snes.66d46131.jpg": "/retroshark/static/media/snes.66d46131.jpg",
+    "static/media/turbografx.49b55477.jpg": "/retroshark/static/media/turbografx.49b55477.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9c513583.js",
+    "static/js/2.ccdd39a4.chunk.js",
+    "static/css/main.3dd00cf6.chunk.css",
+    "static/js/main.12b1f6f4.chunk.js"
+  ]
+}
