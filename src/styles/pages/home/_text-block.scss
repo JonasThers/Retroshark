@@ -26,6 +26,7 @@
   .text-blocks {
     flex-direction: row;
     justify-content: space-between;
+    margin-top: map-get($spacing-unit, 'giant');
   }
 
   .text-block {

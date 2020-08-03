@@ -24,6 +24,10 @@
   }
 }
 
+.send-message {
+  margin-top: map-get($spacing-unit, 'small');
+}
+
 @media (min-width: 768px) {
   .send-button {
     display: flex;

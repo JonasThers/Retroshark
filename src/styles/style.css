@@ -43,6 +43,8 @@ button {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   border: none;
+  position: relative;
+  overflow: hidden;
 }
 
 button.no {
@@ -51,6 +53,70 @@ button.no {
 
 button:focus {
   outline: none;
+}
+
+button:after {
+  content: '';
+  position: absolute;
+  top: -110%;
+  left: -210%;
+  width: 200%;
+  height: 200%;
+  opacity: 0;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+  background: rgba(255, 255, 255, 0.13);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.13)), color-stop(77%, rgba(255, 255, 255, 0.13)), color-stop(92%, rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0)));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.13) 0%, rgba(255, 255, 255, 0.13) 77%, rgba(255, 255, 255, 0.5) 92%, rgba(255, 255, 255, 0) 100%);
+}
+
+button:hover:after {
+  -webkit-animation: shine 5s ease-in-out  infinite;
+          animation: shine 5s ease-in-out  infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes shine {
+  10% {
+    opacity: 2.5;
+    top: -30%;
+    left: -30%;
+    -webkit-transition-property: left, top, opacity;
+    transition-property: left, top, opacity;
+    -webkit-transition-duration: 0.7s, 0.7s, 0.15s;
+            transition-duration: 0.7s, 0.7s, 0.15s;
+    -webkit-transition-timing-function: ease;
+            transition-timing-function: ease;
+  }
+  100% {
+    opacity: 0;
+    top: -30%;
+    left: -30%;
+    -webkit-transition-property: left, top, opacity;
+    transition-property: left, top, opacity;
+  }
+}
+
+@keyframes shine {
+  10% {
+    opacity: 2.5;
+    top: -30%;
+    left: -30%;
+    -webkit-transition-property: left, top, opacity;
+    transition-property: left, top, opacity;
+    -webkit-transition-duration: 0.7s, 0.7s, 0.15s;
+            transition-duration: 0.7s, 0.7s, 0.15s;
+    -webkit-transition-timing-function: ease;
+            transition-timing-function: ease;
+  }
+  100% {
+    opacity: 0;
+    top: -30%;
+    left: -30%;
+    -webkit-transition-property: left, top, opacity;
+    transition-property: left, top, opacity;
+  }
 }
 
 .box-container {
@@ -135,6 +201,7 @@ button:focus {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin-top: 6em;
   }
   .text-block {
     -webkit-transition: 0.5s;
@@ -346,6 +413,10 @@ button:focus {
   margin-bottom: 1em;
 }
 
+.send-message {
+  margin-top: 1em;
+}
+
 @media (min-width: 768px) {
   .send-button {
     display: -webkit-box;
@@ -407,7 +478,7 @@ button:focus {
 }
 
 .popup.hide {
-  bottom: -420px;
+  bottom: -425px;
 }
 
 .popup.visible {
@@ -530,6 +601,7 @@ button:focus {
 
 .navbar-toggler {
   border-color: white !important;
+  width: auto;
 }
 
 .navbar-default .navbar-toggle .icon-bar {

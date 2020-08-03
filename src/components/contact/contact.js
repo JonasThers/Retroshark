@@ -65,7 +65,7 @@ const Contact = () => {
           </div>
         </form>
         {sent && (
-          <div>
+          <div className='send-message'>
             Your message has hereby been sent! We'll get back to you as soon as
             possible!
           </div>

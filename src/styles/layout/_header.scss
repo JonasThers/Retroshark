@@ -9,6 +9,7 @@
 
 .navbar-toggler {
     border-color: map-get($colors, 'white') !important;
+    width: auto;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
