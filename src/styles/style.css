@@ -133,20 +133,30 @@ button:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: calc(100% - 2em);
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .text-block {
-    -webkit-transition: 1s;
-    transition: 1s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    width: calc(33% - 1em);
+    position: relative;
+    top: 0;
   }
   .text-block .text-block-img {
     height: 250px;
+    width: 250px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
   }
   .text-block.highlight {
     position: relative;
-    bottom: 0.5em;
-    -webkit-transition: 1s;
-    transition: 1s;
+    top: -1em;
+  }
+  .text-block.highlight .text-block-img {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
 }
 
@@ -209,6 +219,7 @@ button:focus {
 
 .contact-link {
   margin-bottom: 2em;
+  margin-top: 4em;
 }
 
 @media (min-width: 768px) {

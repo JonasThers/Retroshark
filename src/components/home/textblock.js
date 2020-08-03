@@ -12,7 +12,6 @@ const TextBlock = (props) => {
   };
 
   return (
-    <div>
       <div
         ref={textBlock}
         onMouseOver={highlightTextBlock}
@@ -24,7 +23,6 @@ const TextBlock = (props) => {
         </div>
         <div className="text-block__content">{props.content}</div>
       </div>
-    </div>
   );
 };
 

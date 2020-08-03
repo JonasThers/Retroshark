@@ -25,20 +25,28 @@
 @media (min-width: 1025px) {
   .text-blocks {
     flex-direction: row;
-    width: calc(100% - 2em);
+    justify-content: space-between;
   }
 
   .text-block {
-    transition: 1s;
+    transition: 0.5s;
+    width: calc(33% - 1em);
+    position: relative;
+    top: 0;
 
     .text-block-img {
       height: 250px;
+      width: 250px;
+      transition: 0.5s;
     }
 
     &.highlight {
       position: relative;
-      bottom: map-get($spacing-unit, 'tiny');
-      transition: 1s;
+      top: -(map-get($spacing-unit, 'small'));
+
+      .text-block-img {
+        transform: scale(1.2);
+      }
     }
   }
 }

@@ -48,7 +48,7 @@ const Home = () => {
         </p>
         <p>
           So in case you're tired of Bowser ruining your retro gaming
-          experience...
+          experience, then...
         </p>
       </div>
       <div className='contact-link'>

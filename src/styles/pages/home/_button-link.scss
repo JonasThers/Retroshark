@@ -1,5 +1,6 @@
 .contact-link {
     margin-bottom: map-get($spacing-unit, 'default');
+    margin-top: map-get($spacing-unit, 'big');
 }
 
 @media (min-width: 768px) {
