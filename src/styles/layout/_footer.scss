@@ -9,11 +9,19 @@
   }
 }
 
+.footer__main,
+.footer__info-links {
+  margin-bottom: map-get($spacing-unit, 'default');
+}
+
 .footer__main-name,
-.footer__info-links,
 .footer__info-news-title,
 .footer-link {
   margin-bottom: map-get($spacing-unit, 'tiny');
+}
+
+.footer-link {
+  color: map-get($colors, 'black');
 }
 
 @media (min-width: 768px) {

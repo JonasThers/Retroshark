@@ -11,6 +11,7 @@ const Footer = () => {
   }
 
   return (
+    <div className='footer-overall'>
     <div className="footer container">
       <div className="footer__main">
         <div className="footer__main-name">RetroShark</div>
@@ -35,6 +36,7 @@ const Footer = () => {
           <button onClick={openPopup}>Newsletter</button>
         </div>
       </div>
+    </div>
     </div>
   );
 };

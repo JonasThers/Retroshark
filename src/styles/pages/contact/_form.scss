@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
 
+  button {
+    margin-bottom: 0;
+  }
+
   input,
   textarea {
     margin-top: map-get($spacing-unit, 'small');

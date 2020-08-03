@@ -39,8 +39,8 @@ button {
     transition: 0.3s;
     border: none;
 
-    &:hover {
-        box-shadow: 10px 6px 1px map-get($colors, 'box-shadow');
+    &.no {
+        background: map-get($colors, 'red');
     }
 
     &:focus {

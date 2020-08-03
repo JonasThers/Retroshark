@@ -55,7 +55,7 @@ const Popup = () => {
       </div>
       <div className='popup__actions'>
         <button onClick={() => setPopupContent(true)}>Yes please!</button>
-        <button onClick={closePopup}>No thanks!</button>
+        <button className='no' onClick={closePopup}>No thanks!</button>
       </div>
     </div>
   );

@@ -45,9 +45,8 @@ button {
   border: none;
 }
 
-button:hover {
-  -webkit-box-shadow: 10px 6px 1px rgba(0, 0, 0, 0.08);
-          box-shadow: 10px 6px 1px rgba(0, 0, 0, 0.08);
+button.no {
+  background: #E52521;
 }
 
 button:focus {
@@ -328,6 +327,10 @@ button:focus {
           flex-direction: column;
 }
 
+.contact-form button {
+  margin-bottom: 0;
+}
+
 .contact-form input,
 .contact-form textarea {
   margin-top: 1em;
@@ -481,11 +484,19 @@ button:focus {
   margin-bottom: 1em;
 }
 
+.footer__main,
+.footer__info-links {
+  margin-bottom: 2em;
+}
+
 .footer__main-name,
-.footer__info-links,
 .footer__info-news-title,
 .footer-link {
   margin-bottom: 0.5em;
+}
+
+.footer-link {
+  color: black;
 }
 
 @media (min-width: 768px) {
