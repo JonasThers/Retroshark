@@ -393,7 +393,7 @@ button:focus {
 }
 
 .popup.hide {
-  bottom: -210px;
+  bottom: -420px;
 }
 
 .popup.visible {
