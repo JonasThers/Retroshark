@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles/style.css";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import { LoadingPage, MainLayout } from "./components/layout/layout";
 import Loading from "./components/loadingpage/loading";
 import Home from "./components/home/home";

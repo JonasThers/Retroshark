@@ -9,6 +9,10 @@
   }
 }
 
+.footer__main-name {
+  font-size: map-get($font-sizes, 'medium');
+}
+
 .footer__main,
 .footer__info-links {
   margin-bottom: map-get($spacing-unit, 'default');
