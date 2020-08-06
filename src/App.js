@@ -7,11 +7,13 @@ import Home from "./components/home/home";
 import About from "./components/about/about";
 import Contact from "./components/contact/contact";
 import NoMatch from "./components/404/404";
+import ScrollToTop from "./components/layout/scrolltotop";
 
 const App = () => {
   return (
     <div className="App">
       <Router>
+        <ScrollToTop />
         <Switch>
           <RouteWrapper
             exact
