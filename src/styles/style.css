@@ -555,6 +555,10 @@ button:hover:after {
   margin-bottom: 1em;
 }
 
+.footer__main-name {
+  font-size: 25px;
+}
+
 .footer__main,
 .footer__info-links {
   margin-bottom: 2em;
@@ -597,6 +601,15 @@ button:hover:after {
 
 .navbar-brand a {
   color: white;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .navbar-toggler {

@@ -7,6 +7,11 @@
     }
 }
 
+.navbar {
+    display: flex;
+    align-items: baseline;
+}
+
 .navbar-toggler {
     border-color: map-get($colors, 'white') !important;
     width: auto;
