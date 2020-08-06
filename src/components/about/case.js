@@ -3,7 +3,7 @@ import caseData from '../../json/cases';
 
 const Case = (props) => {
   return (
-    <div className='case'>
+    <div className={props.toRight ? 'case right' : 'case'}>
       <div className='case__info'>
         <div className='case__info-title'>{props.title}</div>
         <div className='case__info-description'>{props.description}</div>

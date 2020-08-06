@@ -32,13 +32,10 @@
 
 @media (min-width: 1268px) {
   .case {
+    flex-direction: row-reverse;
 
-    &:nth-child(even) {
+    &.right {
       flex-direction: row;
-    }
-
-    &:nth-child(odd) {
-      flex-direction: row-reverse;
     }
 
     &__info {
