@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f8abe301d446db94f37d0d65239e7dfb",
+    "revision": "e5e6983b58fe93950022b320362be055",
     "url": "/retroshark/index.html"
   },
   {
-    "revision": "2b9a1ef79249907a9b3a",
+    "revision": "006398cd6d89b636dc18",
     "url": "/retroshark/static/css/main.5331402d.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/retroshark/static/js/2.e99ff692.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2b9a1ef79249907a9b3a",
-    "url": "/retroshark/static/js/main.fad6ce35.chunk.js"
+    "revision": "006398cd6d89b636dc18",
+    "url": "/retroshark/static/js/main.5e7f6059.chunk.js"
   },
   {
     "revision": "7a72abf6507c4e4d6a27",
