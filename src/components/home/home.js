@@ -19,7 +19,7 @@ const Home = () => {
               <div className='intro__text'>
                 Get the help you need when it comes to good old gaming
               </div>
-              <div class='intro__buttons'>
+              <div className='intro__buttons'>
                 <Link to='./about'>
                   <button>Cases</button>
                 </Link>
