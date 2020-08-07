@@ -10,7 +10,7 @@ const Header = () => {
     if (window.innerWidth < 1230) {
       setIsMobile(true);
     }
-  }, []);
+  }, [window.innerWidth]);
 
   const openLinkOnMobile = () => {
     if (expanded && isMobile) {
