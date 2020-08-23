@@ -8,6 +8,10 @@ const Loading = () => {
     const [dot, setDot] = useState('');
 
     useEffect(() => {
+        document.body.style = 'background: black;';
+      }, []);
+
+    useEffect(() => {
         setTimeout(() => {
             setDot(dot + '.');
         }, 500);
