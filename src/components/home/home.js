@@ -9,6 +9,7 @@ import FadeIn from 'react-fade-in';
 const Home = () => {
   useEffect(() => {
     document.title = 'RetroShark | Home';
+    document.body.style = 'background: linear-gradient(to bottom, #049cd8 0%, white 100%); background-attachment: fixed;';
   }, []);
 
   return (
