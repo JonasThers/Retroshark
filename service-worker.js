@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/retroshark/precache-manifest.466d0476b8a69ab2716751ee76898625.js"
+  "/retroshark/precache-manifest.12dca0692fbde286e9330bbf644cf579.js"
 );
 
 self.addEventListener('message', (event) => {
